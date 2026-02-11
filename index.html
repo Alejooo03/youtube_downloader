@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">
+                <span class="icon">🎵</span>
+                YouTube Downloader
+            </h1>
+            <p class="subtitle">Aplicación de Escritorio - Descarga MP4 o MP3</p>
+            <p class="downloads-path" id="downloadsPath">Descargas: Cargando...</p>
+        </header>
+
+        <main class="main-content">
+            <div class="card">
+                <div class="input-group">
+                    <input type="text" id="urlInput" class="url-input" placeholder="Pega aquí la URL de YouTube..."
+                        autocomplete="off">
+                    <button id="fetchInfoBtn" class="fetch-btn">
+                        <span class="btn-text">Obtener Info</span>
+                        <span class="btn-icon">🔍</span>
+                    </button>
+                </div>
+
+                <div id="videoPreview" class="video-preview hidden">
+                    <img id="thumbnail" class="thumbnail" alt="Video thumbnail">
+                    <div class="video-info">
+                        <h3 id="videoTitle" class="video-title"></h3>
+                        <p id="videoAuthor" class="video-author"></p>
+                        <p id="videoDuration" class="video-duration"></p>
+                    </div>
+                </div>
+
+                <div id="downloadSection" class="download-section hidden">
+                    <h3 class="section-title">Selecciona el formato</h3>
+                    <div class="format-buttons">
+                        <button id="downloadMp3" class="format-btn mp3-btn">
+                            <span class="format-icon">🎵</span>
+                            <span class="format-text">
+                                <strong>MP3</strong>
+                                <small>Solo Audio</small>
+                            </span>
+                        </button>
+                        <button id="downloadMp4" class="format-btn mp4-btn">
+                            <span class="format-icon">🎬</span>
+                            <span class="format-text">
+                                <strong>MP4</strong>
+                                <small>Video Completo</small>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="progressSection" class="progress-section hidden">
+                    <h3 class="section-title">Descargando...</h3>
+                    <div class="progress-bar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                    <p id="progressText" class="progress-text">0%</p>
+                </div>
+
+                <div id="errorMessage" class="error-message hidden"></div>
+                <div id="successMessage" class="success-message hidden"></div>
+            </div>
+
+            <button id="openFolderBtn" class="open-folder-btn hidden">
+                📁 Abrir Carpeta de Descargas
+            </button>
+        </main>
+
+        <footer class="footer">
+            <p>✅ Aplicación de escritorio - Funciona sin restricciones</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

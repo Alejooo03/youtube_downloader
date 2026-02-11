@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+
+# Downloaded files
+downloads/
+*.mp3
+*.mp4
+
+# Large binaries (users download separately)
+yt-dlp.exe
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+*.lnk
+
+# Temporary files
+*-player-script.js
+
+# IDE
+.vscode/
+.idea/
