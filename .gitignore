@@ -2,6 +2,9 @@
 node_modules/
 package-lock.json
 
+# Environment variables
+.env
+
 # Build output
 dist/
 
@@ -10,11 +13,9 @@ downloads/
 *.mp3
 *.mp4
 
-# Large binaries (users download separately)
+# Large binaries and tools (downloaded by installer)
 yt-dlp.exe
-
-# Environment variables
-.env
+tools/
 
 # OS files
 .DS_Store

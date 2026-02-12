@@ -16,33 +16,47 @@ Una aplicación de escritorio moderna y fácil de usar para descargar videos de 
 - 💾 **Organización automática** - Archivos guardados en `Downloads/YouTube`
 - 🚀 **Inicio rápido** - Un solo clic con archivo .bat
 
-## 🔧 Requisitos Previos
-
-- **Node.js** 18.0.0 o superior ([Descargar](https://nodejs.org/))
-- **FFmpeg** (solo para MP3) - Ver [guía de instalación](FFMPEG_INSTALL_GUIDE.md)
-
-> **Nota**: Si solo descargas MP4, FFmpeg NO es necesario.
-
 ## 🚀 Instalación
 
-### Inicio Rápido
+### ⚡ Instalación Automática (RECOMENDADO)
 
-1. **Clona el repositorio**:
+**¡La forma más fácil de empezar!** Solo necesitas:
+
+1. **Descarga o clona** este repositorio
+2. **Doble clic** en `INSTALL.bat`
+3. **Espera** 3-5 minutos mientras se instala todo
+4. **¡Listo!** Ejecuta `YouTube Downloader.bat`
+
+El instalador automático descarga e instala:
+- ✅ Node.js (versión portable)
+- ✅ ffmpeg (para conversión MP3)
+- ✅ yt-dlp (motor de descarga)
+- ✅ Todas las dependencias npm
+- ✅ Configuración automática
+
+**📖 Guía completa de instalación:** Ver [INSTALL_GUIDE.md](INSTALL_GUIDE.md)
+
+### 🔧 Instalación Manual (Avanzado)
+
+Si prefieres instalar manualmente:
+
+1. **Instala Node.js** 18.0.0 o superior ([Descargar](https://nodejs.org/))
+2. **Instala FFmpeg** (opcional, solo para MP3) - Ver [guía](FFMPEG_INSTALL_GUIDE.md)
+3. **Clona el repositorio**:
    ```bash
    git clone https://github.com/TU_USUARIO/youtube-downloader.git
    cd youtube-downloader
    ```
-
-2. **Instala dependencias**:
+4. **Instala dependencias**:
    ```bash
    npm install
    ```
-
-3. **Inicia la aplicación**:
-   - **Opción 1 (Fácil):** Doble clic en `YouTube Downloader.bat`
-   - **Opción 2:** Ejecuta `npm start`
+5. **Inicia la aplicación**:
+   - Doble clic en `YouTube Downloader.bat`
+   - O ejecuta `npm start`
 
 **📖 Guía completa:** Ver [USER_GUIDE.md](USER_GUIDE.md)
+
 
 ## 📖 Uso
 
